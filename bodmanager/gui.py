@@ -2,19 +2,24 @@ import tkinter as tk
 from tkinter import ttk
 from bod_import import BODImporter
 from bod_db import bodDB
+from bod_import import bod_data
+
+print(bod_data)
 
 class GUI(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        def changeText():
+        def detect_bod():
             try:
-                text = BODImporter().captureBOD()
+                best_match = BODImporter().captureBOD()
+                text = bod_data[best_match][0:6]
                 stat_mes.delete(1.0,"end")
-                stat_mes.insert(tk.END, 'BOD found: ' + text)
+                stat_mes.insert(tk.END, 'BOD found: ' + ' '.join(text))
                 
-                # typVar.set(text.split()[0])
-                qtyVar.set(text.split()[-1])
+                typVar.set(text[0])
+                qtyVar.set(text[5])
+                sTypVar.set(text[1])
             except:
                 stat_mes.delete(1.0,"end")
                 stat_mes.insert(tk.END, 'Not BOD found, is the BOD visible on screen?')
@@ -29,6 +34,10 @@ class GUI(tk.Tk):
             stat_mes.delete(1.0,'end')
             stat_mes.insert(tk.END, text)
 
+        def bod_file_import():
+            stat_mes.delete(0.0,'end')
+            stat_mes.insert(tk.END, 'Feature not implemented yet')
+
         # Create the root window
         self.title('BOD Manager')
         # self.geometry('680x200')
@@ -38,8 +47,12 @@ class GUI(tk.Tk):
         self.style.theme_use(themename='alt')
 
         # Create import BOD button
-        btn = ttk.Button(self, text = 'Import current BOD', command = changeText)
+        btn = ttk.Button(self, text = 'Import current BOD', command = detect_bod)
         btn.grid(column=0, row=1, padx=10, pady=10,  sticky='w')
+
+        # Import from file button
+        btn_bod_file = ttk.Button(self, text = 'Import BODS from file', command = bod_file_import)
+        btn_bod_file.grid(column = 1, row = 1, padx = 0, pady = 0, sticky = "w")
 
         # Create new database button
         dbBtn = ttk.Button(self, text='Create new database', command = createNewDB)
@@ -56,9 +69,9 @@ class GUI(tk.Tk):
 
         # Create text widget to print status messages
         stat_lab = tk.Label(self, text = 'Status:')
-        stat_lab.grid(row = 4, column = 0, padx = 10, pady = 10, sticky = "w")
+        stat_lab.grid(row = 5, column = 0, padx = 10, pady = 10, sticky = "w")
         stat_mes = tk.Text(self, height = 1)
-        stat_mes.grid(row = 4, column = 1, padx = 10, pady = 10, sticky = "w")
+        stat_mes.grid(row = 5, column = 1, padx = 10, pady = 10, sticky = "w")
 
         # Create file Menu
         menu_bar = tk.Menu(self)
@@ -70,20 +83,28 @@ class GUI(tk.Tk):
         # Dropdown menues
 
         # BOD type (tailor/smith)
-        # typVar = tk.StringVar(self)
-        # typChoices = { 'tailor', 'smith'}
+        typVar = tk.StringVar(self)
+        typChoices = { 'tailor', 'smith'}
 
-        # typMenu = tk.OptionMenu(self, typVar, *typChoices)
-        # tk.Label(self, text = "Choose BOD type").grid(row = 2, column = 0)
-        # typMenu.grid(row = 2, column = 1)
+        typMenu = tk.OptionMenu(self, typVar, *typChoices)
+        tk.Label(self, text = "Choose BOD type").grid(row = 2, column = 0)
+        typMenu.grid(row = 2, column = 1)
+
+        # BOD size type
+        sTypVar = tk.StringVar(self)
+        sTypChoices = { 'sbod', 'lbod'}
+
+        sTypMenu = tk.OptionMenu(self, sTypVar, *sTypChoices)
+        tk.Label(self, text = "Choose BOD size type").grid(row = 3, column = 0)
+        sTypMenu.grid(row = 3, column = 1)
 
         # Quantity
         qtyVar = tk.StringVar(self)
         qtyChoices = { 10, 15, 20 }
 
         qtyMenu = tk.OptionMenu(self, qtyVar, *qtyChoices)
-        tk.Label(self, text = "Choose quantity").grid(row = 3, column = 0)
-        qtyMenu.grid(row = 3, column = 1)
+        tk.Label(self, text = "Choose quantity").grid(row = 4, column = 0)
+        qtyMenu.grid(row = 4, column = 1)
 
 
 

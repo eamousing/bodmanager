@@ -8,6 +8,13 @@ from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 import csv
 
+# Read in list of BODs
+bod_data = []
+with open('../data/bod_list2.csv', 'r') as f:
+    reader = csv.reader(f, delimiter = ',')
+    for lines in reader:
+        bod_data.append(lines)
+
 class BODImporter():
     def __init__(self):
         self.captureBOD
@@ -40,15 +47,23 @@ class BODImporter():
         os.remove('save.png')
 
         # Read in list of BODs
-        bod_data = []
-        with open('../data/bod_list.csv', 'r') as f:
-            reader = csv.reader(f, delimiter = ',')
-            for lines in reader:
-                bod_data.append(lines[2])
+        # bod_data = []
+        # bod_data2 = []
+        # with open('../data/bod_list2.csv', 'r') as f:
+        #     reader = csv.reader(f, delimiter = ',')
+        #     for lines in reader:
+        #         # print(lines[2])
+        #         bod_data.append(lines[2])
+        #         bod_data2.append(' '.join(lines[2:6]))
+        #         print(' '.join(lines[2:6]))
         
         # Compare extracted text to a list of BODs
-        ratios = [fuzz.token_set_ratio(bodText, name) + fuzz.token_sort_ratio(bodText, name) for name in bod_data]
-        best_match = bod_data[ratios.index(max(ratios))]
+        for name in bod_data:
+            print(' '.join(name))
+        
+        ratios = [fuzz.token_set_ratio(bodText, ' '.join(name)) + 
+            fuzz.token_sort_ratio(bodText, ' '.join(name)) for name in bod_data]
+        best_match = ratios.index(max(ratios))
         
         # Return the best match
         return(best_match)
