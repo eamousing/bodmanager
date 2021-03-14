@@ -3,8 +3,7 @@ from tkinter import ttk
 from bod_import import BODImporter
 from bod_db import bodDB
 from bod_import import bod_data
-
-print(bod_data)
+from bod_import import unique_bods
 
 class GUI(tk.Tk):
     def __init__(self):
@@ -20,6 +19,12 @@ class GUI(tk.Tk):
                 typVar.set(text[0])
                 qtyVar.set(text[5])
                 sTypVar.set(text[1])
+                if text[2] == '':
+                    material_var.set('iron')
+                else:
+                    material_var.set(text[2])
+                name_var.set(text[4])
+                quality_var.set(text[3])
             except:
                 stat_mes.delete(1.0,"end")
                 stat_mes.insert(tk.END, 'Not BOD found, is the BOD visible on screen?')
@@ -69,9 +74,9 @@ class GUI(tk.Tk):
 
         # Create text widget to print status messages
         stat_lab = tk.Label(self, text = 'Status:')
-        stat_lab.grid(row = 5, column = 0, padx = 10, pady = 10, sticky = "w")
+        stat_lab.grid(row = 8, column = 0, padx = 10, pady = 10, sticky = "w")
         stat_mes = tk.Text(self, height = 1)
-        stat_mes.grid(row = 5, column = 1, padx = 10, pady = 10, sticky = "w")
+        stat_mes.grid(row = 8, column = 1, padx = 10, pady = 10, sticky = "w")
 
         # Create file Menu
         menu_bar = tk.Menu(self)
@@ -98,13 +103,38 @@ class GUI(tk.Tk):
         tk.Label(self, text = "Choose BOD size type").grid(row = 3, column = 0)
         sTypMenu.grid(row = 3, column = 1)
 
+        # Exceptional/normal
+        quality_var = tk.StringVar(self)
+        quality_choices = { 'exceptional', 'normal'}
+
+        quality_menu = tk.OptionMenu(self, quality_var, *quality_choices)
+        tk.Label(self, text = "Choose BOD quality").grid(row = 4, column = 0)
+        quality_menu.grid(row = 4, column = 1)
+
+        # Material
+        material_var = tk.StringVar(self)
+        material_choices = { 'iron', 'dull copper', 'shadow iron', 'copper',
+            'bronze', 'gold', 'agapite', 'verite', 'valorite'}
+
+        material_menu = tk.OptionMenu(self, material_var, *material_choices)
+        tk.Label(self, text = "Choose material").grid(row = 5, column = 0)
+        material_menu.grid(row = 5, column = 1)
+
+        # Name
+        name_var = tk.StringVar(self)
+        name_choices = unique_bods
+
+        name_menu = tk.OptionMenu(self, name_var, *name_choices)
+        tk.Label(self, text = "Choose BOD name").grid(row = 6, column = 0)
+        name_menu.grid(row = 6, column = 1)
+
         # Quantity
         qtyVar = tk.StringVar(self)
         qtyChoices = { 10, 15, 20 }
 
         qtyMenu = tk.OptionMenu(self, qtyVar, *qtyChoices)
-        tk.Label(self, text = "Choose quantity").grid(row = 4, column = 0)
-        qtyMenu.grid(row = 4, column = 1)
+        tk.Label(self, text = "Choose quantity").grid(row = 7, column = 0)
+        qtyMenu.grid(row = 7, column = 1)
 
 
 

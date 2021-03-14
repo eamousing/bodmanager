@@ -15,6 +15,11 @@ with open('../data/bod_list2.csv', 'r') as f:
     for lines in reader:
         bod_data.append(lines)
 
+unique_bods = { 'ringmail leggings', 'ringmail tunic', 'ringmail gloves', 
+    'ringmail sleeves', 'chainmail leggings', 'chainmail tunic', 'chainmail coif',
+    'platemail helmet', 'platemail gorget', 'platemail tunic', 'platemail arms',
+    'platemail legs', 'platemail gloves'}
+
 class BODImporter():
     def __init__(self):
         self.captureBOD
@@ -58,9 +63,6 @@ class BODImporter():
         #         print(' '.join(lines[2:6]))
         
         # Compare extracted text to a list of BODs
-        for name in bod_data:
-            print(' '.join(name))
-        
         ratios = [fuzz.token_set_ratio(bodText, ' '.join(name)) + 
             fuzz.token_sort_ratio(bodText, ' '.join(name)) for name in bod_data]
         best_match = ratios.index(max(ratios))
