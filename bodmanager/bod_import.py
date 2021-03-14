@@ -10,7 +10,7 @@ import csv
 
 class BODImporter():
     def __init__(self):
-        self.captureBOD()
+        self.captureBOD
 
     def captureBOD(self):
 
