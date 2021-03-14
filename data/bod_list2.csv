@@ -1,3 +1,271 @@
 type,size,material,quality,name,quantity,reward
+smith,sbod,,normal,ringmail leggings,10,none
+smith,sbod,,normal,ringmail leggings,15,none
+smith,sbod,,normal,ringmail leggings,20,none
+smith,sbod,,normal,ringmail tunic,10,none
+smith,sbod,,normal,ringmail tunic,15,none
+smith,sbod,,normal,ringmail tunic,20,none
+smith,sbod,,normal,ringmail sleeves,10,none
+smith,sbod,,normal,ringmail sleeves,15,none
+smith,sbod,,normal,ringmail sleeves,20,none
+smith,sbod,,normal,ringmail gloves,10,none
+smith,sbod,,normal,ringmail gloves,15,none
+smith,sbod,,normal,ringmail gloves,20,none
+smith,sbod,,exceptional,ringmail leggings,10,none
+smith,sbod,,exceptional,ringmail leggings,15,none
+smith,sbod,,exceptional,ringmail leggings,20,none
+smith,sbod,,exceptional,ringmail tunic,10,none
+smith,sbod,,exceptional,ringmail tunic,15,none
+smith,sbod,,exceptional,ringmail tunic,20,none
+smith,sbod,,exceptional,ringmail sleeves,10,none
+smith,sbod,,exceptional,ringmail sleeves,15,none
+smith,sbod,,exceptional,ringmail sleeves,20,none
+smith,sbod,,exceptional,ringmail gloves,10,none
+smith,sbod,,exceptional,ringmail gloves,15,none
+smith,sbod,,exceptional,ringmail gloves,20,none
+smith,sbod,dull copper,normal,ringmail leggings,10,none
+smith,sbod,dull copper,normal,ringmail leggings,15,none
+smith,sbod,dull copper,normal,ringmail leggings,20,none
+smith,sbod,dull copper,normal,ringmail tunic,10,none
+smith,sbod,dull copper,normal,ringmail tunic,15,none
+smith,sbod,dull copper,normal,ringmail tunic,20,none
+smith,sbod,dull copper,normal,ringmail sleeves,10,none
+smith,sbod,dull copper,normal,ringmail sleeves,15,none
+smith,sbod,dull copper,normal,ringmail sleeves,20,none
+smith,sbod,dull copper,normal,ringmail gloves,10,none
+smith,sbod,dull copper,normal,ringmail gloves,15,none
+smith,sbod,dull copper,normal,ringmail gloves,20,none
+smith,sbod,dull copper,exceptional,ringmail leggings,10,none
+smith,sbod,dull copper,exceptional,ringmail leggings,15,none
 smith,sbod,dull copper,exceptional,ringmail leggings,20,none
-smith,sbod,iron,exceptional,ringmail leggings,20,none
+smith,sbod,dull copper,exceptional,ringmail tunic,10,none
+smith,sbod,dull copper,exceptional,ringmail tunic,15,none
+smith,sbod,dull copper,exceptional,ringmail tunic,20,none
+smith,sbod,dull copper,exceptional,ringmail sleeves,10,none
+smith,sbod,dull copper,exceptional,ringmail sleeves,15,none
+smith,sbod,dull copper,exceptional,ringmail sleeves,20,none
+smith,sbod,dull copper,exceptional,ringmail gloves,10,none
+smith,sbod,dull copper,exceptional,ringmail gloves,15,none
+smith,sbod,dull copper,exceptional,ringmail gloves,20,none
+smith,sbod,shadow iron,normal,ringmail leggings,10,none
+smith,sbod,shadow iron,normal,ringmail leggings,15,none
+smith,sbod,shadow iron,normal,ringmail leggings,20,none
+smith,sbod,shadow iron,normal,ringmail tunic,10,none
+smith,sbod,shadow iron,normal,ringmail tunic,15,none
+smith,sbod,shadow iron,normal,ringmail tunic,20,none
+smith,sbod,shadow iron,normal,ringmail sleeves,10,none
+smith,sbod,shadow iron,normal,ringmail sleeves,15,none
+smith,sbod,shadow iron,normal,ringmail sleeves,20,none
+smith,sbod,shadow iron,normal,ringmail gloves,10,none
+smith,sbod,shadow iron,normal,ringmail gloves,15,none
+smith,sbod,shadow iron,normal,ringmail gloves,20,none
+smith,sbod,shadow iron,exceptional,ringmail leggings,10,none
+smith,sbod,shadow iron,exceptional,ringmail leggings,15,none
+smith,sbod,shadow iron,exceptional,ringmail leggings,20,none
+smith,sbod,shadow iron,exceptional,ringmail tunic,10,none
+smith,sbod,shadow iron,exceptional,ringmail tunic,15,none
+smith,sbod,shadow iron,exceptional,ringmail tunic,20,none
+smith,sbod,shadow iron,exceptional,ringmail sleeves,10,none
+smith,sbod,shadow iron,exceptional,ringmail sleeves,15,none
+smith,sbod,shadow iron,exceptional,ringmail sleeves,20,none
+smith,sbod,shadow iron,exceptional,ringmail gloves,10,none
+smith,sbod,shadow iron,exceptional,ringmail gloves,15,none
+smith,sbod,shadow iron,exceptional,ringmail gloves,20,none
+smith,sbod,copper,normal,ringmail leggings,10,none
+smith,sbod,copper,normal,ringmail leggings,15,none
+smith,sbod,copper,normal,ringmail leggings,20,none
+smith,sbod,copper,normal,ringmail tunic,10,none
+smith,sbod,copper,normal,ringmail tunic,15,none
+smith,sbod,copper,normal,ringmail tunic,20,none
+smith,sbod,copper,normal,ringmail sleeves,10,none
+smith,sbod,copper,normal,ringmail sleeves,15,none
+smith,sbod,copper,normal,ringmail sleeves,20,none
+smith,sbod,copper,normal,ringmail gloves,10,none
+smith,sbod,copper,normal,ringmail gloves,15,none
+smith,sbod,copper,normal,ringmail gloves,20,none
+smith,sbod,copper,exceptional,ringmail leggings,10,none
+smith,sbod,copper,exceptional,ringmail leggings,15,none
+smith,sbod,copper,exceptional,ringmail leggings,20,none
+smith,sbod,copper,exceptional,ringmail tunic,10,none
+smith,sbod,copper,exceptional,ringmail tunic,15,none
+smith,sbod,copper,exceptional,ringmail tunic,20,none
+smith,sbod,copper,exceptional,ringmail sleeves,10,none
+smith,sbod,copper,exceptional,ringmail sleeves,15,none
+smith,sbod,copper,exceptional,ringmail sleeves,20,none
+smith,sbod,copper,exceptional,ringmail gloves,10,none
+smith,sbod,copper,exceptional,ringmail gloves,15,none
+smith,sbod,copper,exceptional,ringmail gloves,20,none
+smith,sbod,bronze,normal,ringmail leggings,10,none
+smith,sbod,bronze,normal,ringmail leggings,15,none
+smith,sbod,bronze,normal,ringmail leggings,20,none
+smith,sbod,bronze,normal,ringmail tunic,10,none
+smith,sbod,bronze,normal,ringmail tunic,15,none
+smith,sbod,bronze,normal,ringmail tunic,20,none
+smith,sbod,bronze,normal,ringmail sleeves,10,none
+smith,sbod,bronze,normal,ringmail sleeves,15,none
+smith,sbod,bronze,normal,ringmail sleeves,20,none
+smith,sbod,bronze,normal,ringmail gloves,10,none
+smith,sbod,bronze,normal,ringmail gloves,15,none
+smith,sbod,bronze,normal,ringmail gloves,20,none
+smith,sbod,bronze,exceptional,ringmail leggings,10,none
+smith,sbod,bronze,exceptional,ringmail leggings,15,none
+smith,sbod,bronze,exceptional,ringmail leggings,20,none
+smith,sbod,bronze,exceptional,ringmail tunic,10,none
+smith,sbod,bronze,exceptional,ringmail tunic,15,none
+smith,sbod,bronze,exceptional,ringmail tunic,20,none
+smith,sbod,bronze,exceptional,ringmail sleeves,10,none
+smith,sbod,bronze,exceptional,ringmail sleeves,15,none
+smith,sbod,bronze,exceptional,ringmail sleeves,20,none
+smith,sbod,bronze,exceptional,ringmail gloves,10,none
+smith,sbod,bronze,exceptional,ringmail gloves,15,none
+smith,sbod,bronze,exceptional,ringmail gloves,20,none
+smith,sbod,gold,normal,ringmail leggings,10,none
+smith,sbod,gold,normal,ringmail leggings,15,none
+smith,sbod,gold,normal,ringmail leggings,20,none
+smith,sbod,gold,normal,ringmail tunic,10,none
+smith,sbod,gold,normal,ringmail tunic,15,none
+smith,sbod,gold,normal,ringmail tunic,20,none
+smith,sbod,gold,normal,ringmail sleeves,10,none
+smith,sbod,gold,normal,ringmail sleeves,15,none
+smith,sbod,gold,normal,ringmail sleeves,20,none
+smith,sbod,gold,normal,ringmail gloves,10,none
+smith,sbod,gold,normal,ringmail gloves,15,none
+smith,sbod,gold,normal,ringmail gloves,20,none
+smith,sbod,gold,exceptional,ringmail leggings,10,none
+smith,sbod,gold,exceptional,ringmail leggings,15,none
+smith,sbod,gold,exceptional,ringmail leggings,20,none
+smith,sbod,gold,exceptional,ringmail tunic,10,none
+smith,sbod,gold,exceptional,ringmail tunic,15,none
+smith,sbod,gold,exceptional,ringmail tunic,20,none
+smith,sbod,gold,exceptional,ringmail sleeves,10,none
+smith,sbod,gold,exceptional,ringmail sleeves,15,none
+smith,sbod,gold,exceptional,ringmail sleeves,20,none
+smith,sbod,gold,exceptional,ringmail gloves,10,none
+smith,sbod,gold,exceptional,ringmail gloves,15,none
+smith,sbod,gold,exceptional,ringmail gloves,20,none
+smith,sbod,agapite,normal,ringmail leggings,10,none
+smith,sbod,agapite,normal,ringmail leggings,15,none
+smith,sbod,agapite,normal,ringmail leggings,20,none
+smith,sbod,agapite,normal,ringmail tunic,10,none
+smith,sbod,agapite,normal,ringmail tunic,15,none
+smith,sbod,agapite,normal,ringmail tunic,20,none
+smith,sbod,agapite,normal,ringmail sleeves,10,none
+smith,sbod,agapite,normal,ringmail sleeves,15,none
+smith,sbod,agapite,normal,ringmail sleeves,20,none
+smith,sbod,agapite,normal,ringmail gloves,10,none
+smith,sbod,agapite,normal,ringmail gloves,15,none
+smith,sbod,agapite,normal,ringmail gloves,20,none
+smith,sbod,agapite,exceptional,ringmail leggings,10,none
+smith,sbod,agapite,exceptional,ringmail leggings,15,none
+smith,sbod,agapite,exceptional,ringmail leggings,20,none
+smith,sbod,agapite,exceptional,ringmail tunic,10,none
+smith,sbod,agapite,exceptional,ringmail tunic,15,none
+smith,sbod,agapite,exceptional,ringmail tunic,20,none
+smith,sbod,agapite,exceptional,ringmail sleeves,10,none
+smith,sbod,agapite,exceptional,ringmail sleeves,15,none
+smith,sbod,agapite,exceptional,ringmail sleeves,20,none
+smith,sbod,agapite,exceptional,ringmail gloves,10,none
+smith,sbod,agapite,exceptional,ringmail gloves,15,none
+smith,sbod,agapite,exceptional,ringmail gloves,20,none
+smith,sbod,verite,normal,ringmail leggings,10,none
+smith,sbod,verite,normal,ringmail leggings,15,none
+smith,sbod,verite,normal,ringmail leggings,20,none
+smith,sbod,verite,normal,ringmail tunic,10,none
+smith,sbod,verite,normal,ringmail tunic,15,none
+smith,sbod,verite,normal,ringmail tunic,20,none
+smith,sbod,verite,normal,ringmail sleeves,10,none
+smith,sbod,verite,normal,ringmail sleeves,15,none
+smith,sbod,verite,normal,ringmail sleeves,20,none
+smith,sbod,verite,normal,ringmail gloves,10,none
+smith,sbod,verite,normal,ringmail gloves,15,none
+smith,sbod,verite,normal,ringmail gloves,20,none
+smith,sbod,verite,exceptional,ringmail leggings,10,none
+smith,sbod,verite,exceptional,ringmail leggings,15,none
+smith,sbod,verite,exceptional,ringmail leggings,20,none
+smith,sbod,verite,exceptional,ringmail tunic,10,none
+smith,sbod,verite,exceptional,ringmail tunic,15,none
+smith,sbod,verite,exceptional,ringmail tunic,20,none
+smith,sbod,verite,exceptional,ringmail sleeves,10,none
+smith,sbod,verite,exceptional,ringmail sleeves,15,none
+smith,sbod,verite,exceptional,ringmail sleeves,20,none
+smith,sbod,verite,exceptional,ringmail gloves,10,none
+smith,sbod,verite,exceptional,ringmail gloves,15,none
+smith,sbod,verite,exceptional,ringmail gloves,20,none
+smith,sbod,valorite,normal,ringmail leggings,10,none
+smith,sbod,valorite,normal,ringmail leggings,15,none
+smith,sbod,valorite,normal,ringmail leggings,20,none
+smith,sbod,valorite,normal,ringmail tunic,10,none
+smith,sbod,valorite,normal,ringmail tunic,15,none
+smith,sbod,valorite,normal,ringmail tunic,20,none
+smith,sbod,valorite,normal,ringmail sleeves,10,none
+smith,sbod,valorite,normal,ringmail sleeves,15,none
+smith,sbod,valorite,normal,ringmail sleeves,20,none
+smith,sbod,valorite,normal,ringmail gloves,10,none
+smith,sbod,valorite,normal,ringmail gloves,15,none
+smith,sbod,valorite,normal,ringmail gloves,20,none
+smith,sbod,valorite,exceptional,ringmail leggings,10,none
+smith,sbod,valorite,exceptional,ringmail leggings,15,none
+smith,sbod,valorite,exceptional,ringmail leggings,20,none
+smith,sbod,valorite,exceptional,ringmail tunic,10,none
+smith,sbod,valorite,exceptional,ringmail tunic,15,none
+smith,sbod,valorite,exceptional,ringmail tunic,20,none
+smith,sbod,valorite,exceptional,ringmail sleeves,10,none
+smith,sbod,valorite,exceptional,ringmail sleeves,15,none
+smith,sbod,valorite,exceptional,ringmail sleeves,20,none
+smith,sbod,valorite,exceptional,ringmail gloves,10,none
+smith,sbod,valorite,exceptional,ringmail gloves,15,none
+smith,sbod,valorite,exceptional,ringmail gloves,20,none
+smith,lbod,,normal,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,,normal,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,,normal,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,dull copper,normal,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,dull copper,normal,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,dull copper,normal,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,shadow iron,normal,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,shadow iron,normal,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,shadow iron,normal,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,copper,normal,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,copper,normal,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,copper,normal,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,bronze,normal,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,bronze,normal,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,bronze,normal,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,gold,normal,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,gold,normal,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,gold,normal,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,agapite,normal,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,agapite,normal,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,agapite,normal,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,verite,normal,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,verite,normal,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,verite,normal,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,valorite,normal,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,valorite,normal,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,valorite,normal,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,,exceptional,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,,exceptional,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,,exceptional,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,dull copper,exceptional,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,dull copper,exceptional,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,dull copper,exceptional,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,shadow iron,exceptional,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,shadow iron,exceptional,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,shadow iron,exceptional,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,copper,exceptional,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,copper,exceptional,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,copper,exceptional,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,bronze,exceptional,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,bronze,exceptional,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,bronze,exceptional,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,gold,exceptional,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,gold,exceptional,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,gold,exceptional,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,agapite,exceptional,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,agapite,exceptional,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,agapite,exceptional,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,verite,exceptional,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,verite,exceptional,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,verite,exceptional,ringmail gloves tunic sleeves leggings,20,none
+smith,lbod,valorite,exceptional,ringmail gloves tunic sleeves leggings,10,none
+smith,lbod,valorite,exceptional,ringmail gloves tunic sleeves leggings,15,none
+smith,lbod,valorite,exceptional,ringmail gloves tunic sleeves leggings,20,none
