@@ -10,6 +10,8 @@ class GUI(tk.Tk):
     def __init__(self):
         super().__init__()
 
+        bod_info = [None] * 6
+
         def detect_bod():
             try:
                 best_match = BODImporter().captureBOD()
@@ -20,6 +22,7 @@ class GUI(tk.Tk):
                 typVar.set(text[0])
                 qtyVar.set(text[5])
                 sTypVar.set(text[1])
+                bod_info[2] = sTypVar.get()
                 if text[2] == "":
                     material_var.set("iron")
                 else:
@@ -44,9 +47,19 @@ class GUI(tk.Tk):
             stat_mes.delete(0.0, "end")
             stat_mes.insert(tk.END, "Feature not implemented yet")
 
+        def print_var():
+            bod_info[0] = typVar.get()
+            bod_info[1] = sTypVar.get()
+            bod_info[2] = quality_var.get()
+            bod_info[3] = material_var.get()
+            bod_info[4] = name_var.get()
+            bod_info[5] = qtyVar.get()
+            stat_mes.delete(0.0, "end")
+            stat_mes.insert(tk.END, bod_info)
+
         # Create the root window
         self.title("BOD Manager")
-        # self.geometry('680x200')
+        self.geometry("640x480")
         self.style = ttk.Style(self)
 
         # Set theme
@@ -61,6 +74,10 @@ class GUI(tk.Tk):
             self, text="Import BODS from file", command=bod_file_import
         )
         btn_bod_file.grid(column=1, row=1, padx=0, pady=0, sticky="w")
+
+        # Create print bod button
+        print_bod_btn = ttk.Button(self, text="Print BOD", command=print_var)
+        print_bod_btn.grid(row=1, column=3, padx=10, pady=10)
 
         # Create new database button
         dbBtn = ttk.Button(self, text="Create new database", command=createNewDB)
@@ -77,9 +94,11 @@ class GUI(tk.Tk):
 
         # Create text widget to print status messages
         stat_lab = tk.Label(self, text="Status:")
-        stat_lab.grid(row=8, column=0, padx=10, pady=10, sticky="w")
+        # stat_lab.grid(row=8, column=0, padx=10, pady=10, sticky="w")
+        stat_lab.place(x=10, y=450)
         stat_mes = tk.Text(self, height=1)
-        stat_mes.grid(row=8, column=1, padx=10, pady=10, sticky="w")
+        stat_mes.place(x=70, y=450, width=560)
+        # stat_mes.grid(row=9, column=0, padx=10, pady=10, columnspan=2,sticky="w")
 
         # Create file Menu
         menu_bar = tk.Menu(self)
@@ -95,7 +114,10 @@ class GUI(tk.Tk):
         typChoices = {"tailor", "smith"}
 
         typMenu = tk.OptionMenu(self, typVar, *typChoices)
-        tk.Label(self, text="Choose BOD type").grid(row=2, column=0)
+        typMenu.config(width=14)
+        tk.Label(self, text="Choose BOD type").grid(
+            row=2, column=0, padx=10, sticky="w"
+        )
         typMenu.grid(row=2, column=1)
 
         # BOD size type
@@ -103,7 +125,10 @@ class GUI(tk.Tk):
         sTypChoices = {"sbod", "lbod"}
 
         sTypMenu = tk.OptionMenu(self, sTypVar, *sTypChoices)
-        tk.Label(self, text="Choose BOD size type").grid(row=3, column=0)
+        sTypMenu.config(width=14)
+        tk.Label(self, text="Choose BOD size type").grid(
+            row=3, column=0, padx=10, sticky="w"
+        )
         sTypMenu.grid(row=3, column=1)
 
         # Exceptional/normal
@@ -111,7 +136,10 @@ class GUI(tk.Tk):
         quality_choices = {"exceptional", "normal"}
 
         quality_menu = tk.OptionMenu(self, quality_var, *quality_choices)
-        tk.Label(self, text="Choose BOD quality").grid(row=4, column=0)
+        quality_menu.config(width=14)
+        tk.Label(self, text="Choose BOD quality").grid(
+            row=4, column=0, padx=10, sticky="w"
+        )
         quality_menu.grid(row=4, column=1)
 
         # Material
@@ -129,7 +157,10 @@ class GUI(tk.Tk):
         }
 
         material_menu = tk.OptionMenu(self, material_var, *material_choices)
-        tk.Label(self, text="Choose material").grid(row=5, column=0)
+        material_menu.config(width=14)
+        tk.Label(self, text="Choose material").grid(
+            row=5, column=0, padx=10, sticky="w"
+        )
         material_menu.grid(row=5, column=1)
 
         # Name
@@ -137,7 +168,10 @@ class GUI(tk.Tk):
         name_choices = unique_bods
 
         name_menu = tk.OptionMenu(self, name_var, *name_choices)
-        tk.Label(self, text="Choose BOD name").grid(row=6, column=0)
+        name_menu.config(width=14)
+        tk.Label(self, text="Choose BOD name").grid(
+            row=6, column=0, padx=10, sticky="w"
+        )
         name_menu.grid(row=6, column=1)
 
         # Quantity
@@ -145,7 +179,10 @@ class GUI(tk.Tk):
         qtyChoices = {10, 15, 20}
 
         qtyMenu = tk.OptionMenu(self, qtyVar, *qtyChoices)
-        tk.Label(self, text="Choose quantity").grid(row=7, column=0)
+        qtyMenu.config(width=14)
+        tk.Label(self, text="Choose quantity").grid(
+            row=7, column=0, padx=10, sticky="w"
+        )
         qtyMenu.grid(row=7, column=1)
 
 
